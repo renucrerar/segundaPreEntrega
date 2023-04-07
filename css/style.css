@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover{
+    color: aquamarine;
+    font-size: 30px;
+    background-color: rgb(213, 111, 222);
+    padding: 10px;
+    border-radius: 20px;
+}
+/*INDEX*/
+.navbar{
+    background-color: rgb(83, 189, 238);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+.navbar .logo {
+    width: 150px;
+    height: 140px;
+    grid-column: 2 / 3;
+}
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+justify-content: space-around;
+}
+.navbar .menu li{
+    list-style: none;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.navbar .menu a:hover{
+    color: black;
+
+}
+.navbar .menubar{
+    display: none;
+}
+/*header*/
+
+.hero{
+    height: 80vh;
+    background-image:  url(../img/mano.png);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.hero .infocontent{
+    grid-column: 7 / 10;
+    grid-row: 3 / 7;
+}
+.hero h1{
+    font-size: sem;
+
+}
+.hero p{
+    font-weight: 300;
+    font-size: larger;
+}
+/*main*/
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color:  rgb(83, 189, 238);
+    color: black;
+    grid-template-areas: "siguenos redes";
+}
+.footer .siguenos{
+ grid-template-areas: siguenos; 
+    text-align: center;
+}
+/*footer*/
+/*ENCUESTA*/
+.mainEncuesta{
+    background-image: url(../img/fondo.jpg);
+    display: grid;
+   grid-template-columns:repeat(3, 1fr) ;
+}
+.preguntas{
+    grid-column: 1;
+    background-image: url(../img/patas.png);
+}
+.vOf{
+    grid-column: 2;
+    background-image: url(../img/patas.png);
+    color:rgb(145, 6, 138);
+    font-family: serif;
+}
+.preguntas input{
+    font-size: 20px;
+}
+.gracias{
+    font-size: 50px;
+    font-family: fantasy;
+    background-image: url(../img/patas.png);
+}
+/*ELLOS*/
+.mainEllos{
+    background-image: url(../img/fondo.jpg);
+    display: grid;
+    grid-template-columns: 30% 40% 30%;   
+    grid-template-rows: 50% 50%;
+    justify-content: space-evenly;
+}
+.mainEllos h2{
+    display: grid;
+    grid-column:2;
+    justify-content: center;
+}
+.mainEllos h2 img{
+    width: 270px;
+    height: 270px;
+}
+.mainEllos h3{
+    grid-column: 3;
+
+}
+.mainEllos h1{
+    grid-column: 1;
+}
+
+/*CONTACTO*/
+.mainContacto{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    grid-auto-rows: 30% 50%;
+    background-image: url(../img/fondo.jpg);
+}
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1 / 3;
+
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #9605be;
+    color: #f1f1f1;
+    border-radius: 50%;
+  transition: all .4s ease-in-out;
+  
+    }
+    .mainContacto p{
+        font-size: 30px;
+    }
+    .mainContacto img{
+        width: 110px;
+        height: 110px;
+        display: grid;
+        grid-column: 2;
+        justify-content: center;
+    }
+     .mainContacto h2{
+        display: flex;
+        grid-column: 1;
+     }
+     .mainContacto h3{
+        grid-column: 3;
+        grid-row: 1;
+     }
+     /*AYUDANOS*/
+     .mainAyudanos{
+        background-image: url(../img/fondo.jpg);
+        display: grid;
+        grid-template-columns:33% 33% 33% ;
+        grid-template-rows: 100px 300px;
+
+     }
+     .mainAyudanos h1{
+        grid-column: 2;
+     }
+     .mainAyudanos img{
+        width: 300px;
+        height: 300px;
+        grid-column: 2;
+     }
+     .mainAyudanos p{
+        grid-column: 1;
+        font-size: 20px;
+     }
+     .mainAyudanos h2{
+       grid-column:  3;
+     }
+    
